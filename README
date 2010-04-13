@@ -1,0 +1,4 @@
+1. copy .emacs to your home directory
+cp .emacs ~/
+2. start emacs
+emacs
