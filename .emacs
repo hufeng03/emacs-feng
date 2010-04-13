@@ -56,14 +56,14 @@
      (color-theme-initialize)
      (color-theme-tty-dark)))
 
-;;psvn
-(require 'psvn)
-
 
 (add-to-list 'load-path "/home/feng/.emacs.d")
 ;;auto-complete
 (require 'auto-complete)
 (global-auto-complete-mode t)
+
+;;psvn
+(require 'psvn)
 
 ;;yasnippet
 (add-to-list 'load-path "/home/feng/.emacs.d/yasnippet-0.6.1c")
@@ -254,7 +254,7 @@
 (add-hook 'after-init-hook 'session-initialize)
 
 ;;muse
-(setq load-path (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/muse"))
+(setq loadpath (add-to-list 'load-path "~/.emacs.d/muse-latest/lisp"))
 (require 'muse-mode)
 (require 'muse-publish)
 (require 'muse-html)
@@ -274,7 +274,7 @@
 
 ;;android
 (add-to-list 'load-path "~/.emacs.d/android-mode")
-(require 'android)
+;;(require 'android)
 (require 'android-mode)
 
 ;;git

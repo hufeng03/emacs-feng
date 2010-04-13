@@ -1,4 +1,11 @@
-1. copy .emacs to your home directory
-cp .emacs ~/
+0. remove your existing directory ~/.emacs.d
+1. git clone
+git clone git://github.com/windrok/emacs-feng.git ~/.emacs.d
+cd .emacs.d
+rm -rf android-mode
+git clone git://github.com/remvee/android-mode.git
+2. move .emacs
+cd
+mv .emacs.d/.emacs .
 2. start emacs
 emacs
